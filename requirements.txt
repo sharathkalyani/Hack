@@ -1,0 +1,27 @@
+create database admin_dashboard;
+
+use admin_dashboard;
+
+CREATE TABLE schemes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    apply_link VARCHAR(255) NOT NULL,
+    eligibility_criteria TEXT NOT NULL
+);
+
+CREATE TABLE equipment (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    type VARCHAR(255) NOT NULL,
+    quantity INT NOT NULL,
+    price_per_day DECIMAL(10, 2) NOT NULL
+);
+
+create table labor (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(25) NOT NULL,
+    age int,
+    contact_no varchar(15),
+    address varchar(100)
+    );
